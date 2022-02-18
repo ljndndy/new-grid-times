@@ -53,6 +53,8 @@ const Wrapper = styled.div`
     'advertisement';
   gap: 48px;
   margin-bottom: 48px;
+
+  --story-list-spacing: 16px;
 `;
 
 const MainStorySection = styled.section`
@@ -66,6 +68,19 @@ const SecondaryStorySection = styled.section`
 const StoryList = styled.div`
   display: flex;
   flex-direction: column;
+  
+  & > * {
+    padding-bottom: var(--story-list-spacing);
+  }
+
+  & > *:not(:first-of-type) {
+    border-top: 1px solid var(--color-gray-300);
+    padding-top: var(--story-list-spacing);
+  }
+
+  & > *:last-of-type {
+    padding-bottom: unset;
+  }
 `;
 
 const OpinionSection = styled.section`
