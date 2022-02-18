@@ -21,6 +21,18 @@ const Wrapper = styled.article`
   gap: 4px 16px;
   grid-template-columns: 120px 1fr;
   color: var(--color-gray-900);
+
+  --spacing: 16px;
+  padding-bottom: var(--spacing);
+
+  &:not(:first-of-type) {
+    border-top: 1px solid var(--color-gray-300);
+    padding-top: var(--spacing);
+  }
+
+  &:last-of-type {
+    padding-bottom: unset;
+  }
 `;
 
 const Image = styled.img`

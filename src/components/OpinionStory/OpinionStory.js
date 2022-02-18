@@ -22,13 +22,10 @@ const Wrapper = styled.article`
   flex-direction: row-reverse;
   justify-content: space-between;
 
-  @media ${QUERIES.tabletAndUp} {
+  @media ${QUERIES.tabletOnly} {
     flex-direction: column;
   }
 
-  @media ${QUERIES.laptopAndUp} {
-    flex-direction: row-reverse;
-  }
 `;
 
 const Avatar = styled.img`
