@@ -51,11 +51,11 @@ const Abstract = styled.p`
   overflow: hidden;
 
   // 16 9
-  @media ${QUERIES.laptopAndUp} {
+  @media ${QUERIES.tabletAndUp} {
     -webkit-line-clamp: 16;
   }
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     -webkit-line-clamp: 9;
   }
 `;
